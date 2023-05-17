@@ -4,12 +4,13 @@
 
 {% block Contenido %}  
 
-<div class="p-5 bg-light">
-    <div class="container">
-        <h1 class="display-3">BIENVENIDOS USUARIOS</h1>
+<div class="my-5 p-4 bg-dark border card border">
+    <div class="my-3 container">
+        <h1 class="display-3 text-light">BIENVENIDOS USUARIOS</h1>
         
       
-        <a class="btn btn-primary btn-lg" href="jumbo action link" role="button">Empezar</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'Libros' %}" role="button">Empezar</a>
+        
 </div>
 
 {% endblock %}

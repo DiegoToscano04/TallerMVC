@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+   
+{% block titulo %} Nosotros {% endblock %}
+
+{% block Contenido %}  
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserBootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    
+    <div class="container d-flex my-2 justify-content-center my-4">
+        <div class="card col-sm-4 p-4 center rounded-5">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="mb-3 display-5 text-danger text-center">
+                    <h2>Formulario Registro de Usuario</h2>
+                </div>
+        </div>
+
+        <div class="text-center fs-6 fw-bold text-danger">
+        <section class="form">
+            <form action="#" method="post">
+
+                <div class="mb-2"  >
+                    
+                    <input type="text" class="form-control text-center" name="id" value="" required="" pattern="[0-9]+"
+                        placeholder="Identificación" size="15" maxlength="10" />
+                </div>
+                <div class="dropdown mb-2" >
+                    <select name="select" type="button" value="país" class="Select form-control text-center bg-warning">
+                        <option value="Colombia">Seleccione su país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Japón">Japón</option>
+                        <option value="Francia">Francia</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control text-center" name="name" value="" required=""
+                        placeholder="Ingrese su nombre" size="20" maxlength="35" />
+                </div>
+                <div class="mb-2">
+                    
+                    <input type="text" class="form-control text-center" name="surname" value="" required=""
+                        placeholder="Ingrese su apellido" size="20" maxlength="35" />
+                </div>
+                <div class="mb-2">
+                    
+                    <input type="text" class="form-control text-center" name="adress" value="" required=""
+                        placeholder="Ingrese su dirección" size="30" maxlength="35" />
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control text-center" name="nd" value="" required="" size="15"
+                        placeholder="Usuario" maxlength="20" />
+                </div>
+                <div class="mb-2">
+                    
+                    <input type="password" class="form-control text-center" name="pw" value="" required="" placeholder="Contraseña"
+                        size="15" maxlength="30" />
+                </div>
+                <div class="mb-2">
+                    
+                    <input type="email" class="form-control text-center" name="email" value="" required=""
+                        placeholder="Ingrese su email" size="20" maxlength="" />
+                </div>
+                <div class="mb-2">
+                   
+                    <input type="text" class="form-control text-center" name="nd" value="" required="" size="15"
+                        placeholder="Teléfono" maxlength="10" pattern="[0-9]+" />
+                </div>
+                <div class="d-grid gap-2">
+                    <a name="" id="" class="btn btn-success" href="{% url 'Libros' %}" role="button">Registrarse</a>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+        </div>
+        </div>
+    
+</body>
+
+</html>
+
+{% endblock %}
+
+
